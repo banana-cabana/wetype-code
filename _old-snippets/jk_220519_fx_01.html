@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+  }
+
+  body {
+    font-family: Konsole;
+    font-size: 4vw;
+    text-align: center;
+    /* color: white;
+    background-color: black; */
+  }
+
+  font {
+    display: inline-block;
+    position: relative;
+  }
+
+  .content-container {
+    margin-top: 30vh;
+  }
+
+
+  .c-01 {font-size: 8vw; top: 0vw;}
+  .c-02 {font-size: 12vw; top: 1vw;}
+  .c-03 {font-size: 4vw; top: 1.5vw;}
+  .c-04 {font-size: 20vw; top: 0vw;}
+
+  font {
+    border: 0.1vw solid black;
+  }
+
+  font:nth-of-type(2n) {
+    animation: animation-01 2s linear 0s infinite alternate;
+  }
+
+
+  @keyframes animation-01 {
+    0%   {padding: 0vw 1vw;}
+    100% {padding: 0vw 0vw;}
+  }
+
+  @keyframes animation-02 {
+    0%   {top: 5vw;}
+    100% {top: 0vw;}
+  }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="content-container">
+<span class="word word-01">
+  <font class="c-01">c</font><font class="c-02">l</font><font class="c-03">i</font><font class="c-04">c</font><font class="c-05">k</font>
+</span>
+<span class="word word-02">
+  <font class="c-01">c</font><font class="c-02">l</font><font class="c-03">a</font><font class="c-04">c</font><font class="c-05">k</font>
+</span>
+
+
+</div>
+
+
+</body>
+
+ </html>

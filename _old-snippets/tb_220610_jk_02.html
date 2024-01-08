@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///Users/josephinekaehler/Nextcloud/we-code-type-cloud/220527/jk/220516_jk_05.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+    }
+
+  body {
+    font-family: Konsole;
+    font-size: 5vw;
+    text-align: center;
+    overflow: hidden;
+    }
+
+
+  span {
+    height: 20vw;
+    position: absolute;
+    width: 5vw;
+    left: 50vw;
+    transform-origin: center;
+    /* background-color: yellow; */ /*helps to understand how the span is twisted*/
+    }
+
+  .word-container {
+    margin-top: 60vh;
+    }
+
+/* here you can define the keyframes for your animation */
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+  }
+  .word-container {animation: rotation 2s linear 0s infinite;}
+  .c-01 {transform: rotate(0deg); animation: rotation 2s linear 0s infinite;}
+  .c-02 {transform: rotate(22.5deg); animation: rotation 2s linear 0s infinite;}
+
+/*The original plan was to animate every letter around the circle. But that's how it accidentally turned out and it looks quite funny so I quitted the plan :) */
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="word-container">
+
+  <span class="c-01">o</span><span class="c-02">i</span>
+
+</div>
+
+
+
+
+
+</body></html>

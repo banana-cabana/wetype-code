@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+    }
+
+  body {
+    font-family: Konsole;
+    font-size: 25vw;
+    text-align: center;
+    }
+
+  span{
+    display: inline-block;
+    }
+
+/* Every second span in every paragraph is animated */
+  span:nth-child(2n){
+    animation: animation1 10s linear 0s infinite alternate;
+    }
+
+/* Starting at 0, every second span +1 is animated */
+  span:nth-child(2n+1){
+    animation: animation2 5s linear 0s infinite alternate;
+    }
+
+/* here you can define the keyframes for your animation */
+  @keyframes animation1 {
+    0%   {transform: scale(1)}
+    50%  {transform: rotate3d(1, 2, -1, -290deg);}
+  }
+
+  @keyframes animation2 {
+    0%   {transform: scale(1)}
+    100%  {transform: rotate3d(1, 5, -1, 270deg);}
+  }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <span>h</span>
+  <span>m</span>
+  <span>m</span><br>
+  <span>n</span>
+  <span>a</span>
+  <span>j</span>
+  <span>a</span>
+
+
+</body>
+
+ </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+  }
+
+  body {
+    font-family: Konsole;
+    font-size: 3vw;
+    text-align: left;
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+
+  }
+
+  .word-container {
+    margin-top: 20vh;
+  }
+
+  .c-01 {top: 24vw; transform: rotate(0deg); animation: animation-01 2s linear 0s infinite normal;}
+  .c-02 {top: 4em; transform: rotate(0deg); animation: animation-02 2s linear 5s infinite normal;}
+  .c-03 {top: 6em; transform: rotate(0deg); animation: animation-01 2s linear 2s infinite normal;}
+  .c-04 {top: 4em; transform: rotate(0deg); animation: animation-02 2s linear 3s infinite normal;}
+  .c-05 {top: 6em; transform: rotate(0deg); animation: animation-01 2s linear 4s infinite normal;}
+  .c-06 {top: 4em; transform: rotate(0deg); animation: animation-02 2s linear 5s infinite normal;}
+  .c-07 {top: 6em; transform: rotate(0deg); animation: animation-01 2s linear 3s infinite normal;}
+
+
+  @keyframes animation-01 {
+    0%   {top: 0em; transform: rotate(0deg);}
+    50%  {top: -2em; transform: rotate(90deg);}
+    100% {top: 0em; transform: rotate(270deg);}
+  }
+
+  @keyframes animation-02 {
+    0%   {top: 0em; transform: rotate(0deg);}
+    50%  {top: -2em; transform: rotate(-270deg);}
+    100% {top: 0em; transform: rotate(-360deg);}
+  }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="word-container">
+
+<span class="c-01">hola</span><span class="c-02">como</span><span class="c-03">estas</span><span class="c-04">hoy</span><span class="c-05">no</span><span class="c-06">hay</span><span class="c-07">sol</span>
+
+</div>
+
+
+</body>
+
+ </html>

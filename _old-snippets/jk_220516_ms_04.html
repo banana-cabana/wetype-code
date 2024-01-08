@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+  }
+
+  body {
+    font-family: Konsole;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 40vh;
+    /* color: white;
+    background-color: black; */
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+  }
+
+  .word-container {
+    /* padding-top: 40vh; */
+  }
+
+  .c-01 {transform: rotate(0deg); animation: animation-01 2s linear 0s infinite normal;}
+  .c-02 {transform: rotate(0deg); animation: animation-02 2.1s linear 1s infinite normal;}
+  .c-03 {transform: rotate(0deg); animation: animation-01 2.2s linear 2s infinite normal;}
+  .c-04 {transform: rotate(0deg); animation: animation-02 2.3s linear 3s infinite normal;}
+  .c-05 {transform: rotate(0deg); animation: animation-01 2.4s linear 4s infinite normal;}
+  .c-06 {transform: rotate(0deg); animation: animation-02 2.5s linear 5s infinite normal;}
+  .c-07 {transform: rotate(0deg); animation: animation-01 2.6s linear 6s infinite normal;}
+
+
+  @keyframes animation-01 {
+    0%   {top: 0vw; transform: rotate(0deg);}
+    50%  {top: -12vw; transform: rotate(180deg);}
+    100% {top: 0vw; transform: rotate(360deg);}
+  }
+
+  @keyframes animation-02 {
+    0%   {top: 0vw; transform: rotate(0deg);}
+    50%  {top: -12vw; transform: rotate(-180deg);}
+    100% {top: 0vw; transform: rotate(-360deg);}
+  }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="word-container">
+
+<span class="c-01">b</span><span class="c-02">o</span><span class="c-03">o</span><span class="c-04">y</span><span class="c-05">a</span><span class="c-06">k</span><span class="c-07">a</span>
+
+</div>
+
+
+</body>
+
+ </html>

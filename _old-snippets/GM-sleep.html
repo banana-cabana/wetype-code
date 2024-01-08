@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <style media="screen">
+      @font-face {
+        font-family: "Konsole";
+        src: url(fonts/Konsolev1.1-VF.ttf);
+
+      }
+
+     body {
+      background: black;
+    }
+
+      .center {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      } 
+
+      #movetxt {
+        color: white;
+        font-family: Konsole;
+        font-size: 100px;
+        text-transform: uppercase;
+        /*text-shadow:  5px  5px 5px white,
+                  1px -1px 1px black,
+                 -1px  1px 1px black,
+                 -1px -1px 1px black;*/
+      }
+
+
+
+    #movetxt {
+    -webkit-animation: moving 5s infinite;
+    /*animation: moving 2.2s infinite;*/
+    animation-direction: alternate;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes moving {
+   from {transform: translateX(0px);}
+    to {transform: translateX(200px);}
+    0% {border-left: 0px; background: none; letter-spacing: -0.1em;
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1;
+  font-variation-settings: "wght" 100, "wdth" 70;}
+   100% {border-left: 200px; background: none; letter-spacing: 0.6em; 
+     animation: moving 1s infinite; transform: skew(-25deg);
+
+  font-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1;
+  font-variation-settings: "wght" 700.3226, "wdth" 92.1348;
+  text-shadow:  5px  5px 5px white,
+                  1px -1px 1px black,
+                 -1px  1px 1px black,
+                 -1px -1px 1px black;
+  transform: scaleY(2);
+ }
+}
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="center">
+    <div id="movetxt">zzzzzzz</div>
+
+  </div>
+  </body>
+
+</html>

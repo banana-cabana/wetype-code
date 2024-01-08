@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    @font-face {
+      font-family: "Konsole";
+      src: url(fonts/Konsolev1.1-VF.ttf);
+    }
+
+    body {
+      font-family: Konsole;
+      font-size: 7vw;
+      padding: 0.5vw;
+      text-align: center;
+    }
+
+    span {
+      width: 3vw;
+      padding: 3vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
+      transform-origin: center;
+    }
+
+    /* Every second span turns counterwise */
+    span:nth-child(2n) {
+      animation: counterwise 7s linear 0s infinite none;
+      display: inline-block;
+    }
+
+    /* Every second span turns clockwise */
+    span:nth-child(2n+1) {
+      animation: clockwise 7s linear 0s infinite none;
+      display: inline-block;
+    }
+
+/* Here you can define the keyframes for your animation */
+    @keyframes clockwise {
+      0%   {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+
+    @keyframes counterwise {
+      0%   {transform: rotate(360deg);}
+      100% {transform: rotate(0deg);}
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <span>w</span>
+    <span>h</span>
+    <span>e</span>
+    <span>e</span>
+    <span>e</span>
+    <br>
+    <span>h</span>
+    <span>u</span>
+    <span>u</span>
+    <span>i</span>
+    <span>i</span>
+    <br>
+    <span>y</span>
+    <span>e</span>
+    <span>e</span>
+    <span>a</span>
+    <span>h</span>
+    <br>
+    <span>w</span>
+    <span>u</span>
+    <span>h</span>
+    <span>u</span>
+    <span>u</span>
+  </body>
+</html>

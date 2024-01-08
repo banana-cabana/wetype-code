@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1TRIALGX.ttf);
+  }
+
+  body {
+    font-family: Konsole;
+    font-size: 500%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  .content-container {
+    margin-top: 30vh;
+  }
+  .word {
+    display: inline-block;
+    font-variation-settings: "wght" 100;
+    font-variation-settings: "wdth" 100;
+    color: black;
+  }
+
+  .word-01 {
+    animation: animation-01 5s linear 0s infinite alternate;
+  }
+  .word-02 {
+    animation: animation-02 5s linear 0s infinite alternate;
+  }
+
+  font {
+
+  }
+
+  /* font:nth-of-type(2n+1) {
+    animation: animation-01 1s linear 0s infinite alternate;
+  } */
+
+  @keyframes animation-01 {
+    0%   { font-variation-settings: "wght" 100;}
+    100% { font-variation-settings: "wght" 800;}
+  }
+
+  @keyframes animation-02 {
+    0%   { font-variation-settings: "wdth" 100;}
+    100% { font-variation-settings: "wdth" 800;}
+  }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="content-container">
+  <span class="word word-01"><font class="c-01">d</font><font class="c-02">i</font><font class="c-03">n</font><font class="c-04">g</font><span class="word word-02"><font class="c-01">d</font><font class="c-02">o</font><font class="c-03">n</font><font class="c-04">g</font>
+</div>
+
+
+</body>
+
+ </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+    }
+
+  body {
+    font-family: Konsole;
+    font-variation-settings: "wght" 500;
+    font-size: 4vw;
+    letter-spacing: 2vw;
+    writing-mode: vertical-rl; /*The content flows vertically from bottom to top, and the next vertical line is positioned to the left of the previous line.*/
+    color: white;
+    background-color: black;
+    margin: 0;
+    line-height: 1.55;
+    }
+
+    /* here you can define the keyframes for your animation */
+    @keyframes hoch {
+      0%   {margin-top: 4vw}
+      }
+
+    .word {
+      display: inline-block;
+      animation-name: hoch;
+      animation-duration: 1s;
+      transition-timing-function: ease;
+      animation-iteration-count: infinite;
+      }
+
+    .word-02 {
+      animation: hoch 0.25s ease 0s infinite alternate;
+      }
+
+    .word-03 {
+      animation-name: hoch;
+      animation-duration: 6s;
+      }
+
+  </style>
+
+</head>
+
+<body>
+
+<div>
+  <span class="word word-01 word-03"><font class="word-02">h</font><font>o</font><font>p</font><font>p</font><span class="word word-02"><font>l</font><font class="word-03">a</font>
+</div>
+  <br>
+  <br>
+  <div>
+  <span class="word word-01 word-03"><font class="word-02">u</font><font class="word-02">p</font><font>s</font>
+</div>
+  <br>
+  <br>
+<div>
+  <span class="word word-01 word-03"><font class="word-02">b</font><font class="word-02">l</font><font>u</font><font>b</font>
+</div>
+  <br>
+  <br>
+<div>
+  <span class="word word-01 word-03"><font class="word-02">ä</font><font class="word-02">ä</font><font>ä</font><font>h</font><span class="word word-02"><font>m</font>
+</div>
+  <br>
+  <br>
+<div class="content-container">
+  <span class="word word-01 word-03"><font class="word-02">u</font><font class="word-02">i</font><font>u</font><font>i</font>
+</div>
+  <br>
+  <br>
+<div>
+  <span class="word word-01 word-03"><font class="word-02">g</font><font class="word-02">r</font><font>m</font><font>p</font><span class="word word-02"><font>f</font>
+</div>
+
+</body>
+
+ </html>

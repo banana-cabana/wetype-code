@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://use.typekit.net/ypw6twd.css">
+<head>
+<title>we.type</title>
+
+<style>
+
+@font-face {
+  font-family: "Konsole";
+  src: url(fonts/Konsolev1.1-VF.ttf);
+}
+
+
+    h1 {
+        font-size: 20em;
+        margin: 0;
+        font-family: Konsole;
+        /* font-weight: 700; */
+        font-style: normal;
+        text-align: center;
+        overflow: hidden;
+        }
+
+    h2 {
+        font-size: 12em;
+        font-family: Konsole;
+        margin: 0;
+        font-style: oblique;
+        text-align: center;
+        overflow: hidden;
+        }
+
+    .running {
+          /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: my-animation 50s linear infinite;
+        -webkit-animation: my-animation 15s linear infinite;
+        animation: my-animation 15s linear infinite;
+        }
+
+    @-moz-keyframes my-animation {
+        from { -moz-transform: translateX(100%); }
+        to { -moz-transform: translateX(-100%); }
+        }
+
+    @-webkit-keyframes my-animation {
+        from { -webkit-transform: translateX(100%); }
+        to { -webkit-transform: translateX(-100%); }
+        }
+
+    @keyframes my-animation {
+        from {
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            }
+
+        to {
+            -moz-transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            }
+    }
+</style>
+</head>
+<body>
+<h1 class="running">eijeijeijeieijeijeijei</h1>
+<h2>Brr, ist das kalt!</h2>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+
+  @font-face {
+    font-family: "Konsole";
+    src: url(fonts/Konsolev1.1-VF.ttf);
+    }
+
+
+  body {
+    font-family: Konsole;
+    font-size: 15vw;
+    padding: 2vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    }
+
+
+  span {
+    mix-blend-mode: difference;
+    will-change: opacity;
+    }
+
+/* Every second child turns counterwise */
+  span:nth-child(2n) {
+    animation: counterwise 5s ease 0s infinite none;
+    display: inline-block;
+    }
+
+/* Every second child turns clockwise */
+  span:nth-child(2n+1) {
+    animation: clockwise 5s ease 0s infinite none;
+    display: inline-block;
+    }
+
+  @keyframes clockwise {
+    0%   {transform: rotate(-0.5turn);}
+    50%   {transform: rotate(0turn);}
+    100% {transform: rotate(-0.5turn);}
+  }
+  @keyframes counterwise {
+    0%   {transform: rotate(0turn);}
+    50%   {transform: rotate(-0.5turn);}
+    100% {transform: rotate(0turn);}
+  }
+
+
+  </style>
+
+</head>
+
+
+
+<body>
+<div class="main">
+<span>ho</span><span>lt</span><span>er</span><span>die</span>
+<br>
+<span>po</span><span>lt</span><span>er</span><span></span>
+</div>
+</body>
+
+ </html>
