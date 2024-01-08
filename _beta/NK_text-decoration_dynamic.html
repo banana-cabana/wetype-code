@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Decoration</title>
+    
+    <style>
+      @font-face {
+           font-family: Konsole;
+           src: url(../fonts/Konsolev1.1-VF.ttf);
+         } 
+
+    body {
+      font-family: Konsole;
+      font-size: 2em;
+    }
+
+      @keyframes text-decoration-animation {
+      from        {
+          text-decoration: underline rgb(0, 0, 0) 1px;
+      }
+      to {
+          text-decoration: underline rgb(255, 255, 255) 100px; 
+      }
+      }
+
+     .V01 {
+       text-align: center;
+       animation-name: text-decoration-animation;
+       animation-duration: 5s;
+       animation-iteration-count: 3;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: ease-in-out;
+     }
+
+     .V02 {
+       text-align: center;
+       animation-name: text-decoration-animation;
+       animation-duration: 1s;
+       animation-iteration-count: 3;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: ease-in-out;
+     }
+      
+
+    </style>
+</head>
+
+
+<body>  
+  <p class="V01"> text-decoration: underline </p>
+  <p class="V02"> text-decoration: <br>underline </p>
+
+</body>
+
+
+</html>

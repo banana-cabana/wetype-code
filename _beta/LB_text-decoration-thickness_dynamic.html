@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration-thickness</title>
+    <style>
+        
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+            /* font-variation-settings: "wght" 450, "wdth" 110;             */
+        }
+
+        @keyframes tdt {
+        from        {
+            text-decoration-thickness: 0px;
+        }
+        to {
+            text-decoration-thickness: 500px;
+        }
+        }
+
+        p {
+            text-decoration-line: underline;
+            text-align: center;
+            animation-name: tdt;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p> Variably underlined text </p>
+</body>
+</html>

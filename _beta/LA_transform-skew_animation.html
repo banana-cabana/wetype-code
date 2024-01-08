@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: Konsole;
+            src: url(../fonts/Konsolev1.1-VF.ttf);
+        }
+        :root{
+            --skew-minus: -35deg;/* variabel for the negative skew value -35*/
+            --skew-plus: 35deg; /* variabel for the positive skew value 35*/
+            --ani-duration: 2.5s; /* variabel for the duration of the animation */
+        }
+        body{
+            font-size: 5vw; 
+            line-height: 4vw;/* distance above each line to the next one */
+            font-family: Konsole;
+            position: relative; 
+            left: 15vw;
+            top: 15vw;
+        }
+        /* positioning on the canvas for each line of text */
+        .c-margin1{
+            margin-left: 20vw;
+            margin-bottom: 3vw;
+        }
+        .c-margin2{
+            margin-left: 16vw;
+            margin-bottom: 3vw;
+        }
+        .c-margin3{
+            margin-left: 12.3vw;
+        }
+        span {
+            display: inline-block; /* makes the span elements behave like a block element (necessary for the animation to work) */
+        }
+        /* classes to create a seperate animation for each letter */
+        /* first line */
+        /* this */
+        .c1 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.35s infinite alternate;} /* t */
+        .c2 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.40s infinite alternate;} /* h */
+        .c3 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.50s infinite alternate;}/* i */
+        .c4 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.60s infinite alternate;}/* s */
+        /* text */
+        .c5 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.70s infinite alternate;}/* t */
+        .c6 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.75s infinite alternate;}/* e */
+        .c7 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.85s infinite alternate;}/* x */
+        .c8 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.90s infinite alternate;}/* t */
+        /* is */
+        .c9 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.95s infinite alternate;}/* i */
+        .c10 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1s infinite alternate;}/* s */
+        /* second line */
+        /* tilting */
+        .c11 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.25s infinite alternate;}/* t */
+        .c12 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.28s infinite alternate;}/* i */
+        .c13 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.32s infinite alternate;}/* l */
+        .c14 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.35s infinite alternate;}/* t */
+        .c15 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.40s infinite alternate;}/* i */
+        .c16 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.50s infinite alternate;}/* n */
+        .c17 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.60s infinite alternate;}/* g */
+        /* between */
+        .c18 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.70s infinite alternate;}/* b */
+        .c19 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.80s infinite alternate;}/* e */
+        .c20 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.85s infinite alternate;}/* t */
+        .c21 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 0.90s infinite alternate;}/* w */
+        .c22 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 1s infinite alternate;}/* e */
+        .c23 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 1.10s infinite alternate;}/* e */
+        .c24 { transform: skew(var(--skew-plus)); animation: animation-02 var(--ani-duration) ease-in-out 1.20s infinite alternate;}/* n */
+        /* thrid line */
+        /* -30 */
+        .c25 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.05s infinite alternate;}/* - */
+        .c26 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.15s infinite alternate;}/* 3 */
+        .c27 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.25s infinite alternate;}/* 0 */
+        /* and */
+        .c28 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.35s infinite alternate;}/* a */
+        .c29 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.45s infinite alternate;}/* n */
+        .c30 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.55s infinite alternate;}/* d */
+        /* 30 */
+        .c31 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.65s infinite alternate;}/* 3 */
+        .c32 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.75s infinite alternate;}/* 0 */
+        /* degree */
+        .c33 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.85s infinite alternate;}/* d */
+        .c34 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 0.95s infinite alternate;}/* e */
+        .c35 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1.05s infinite alternate;}/* g */
+        .c36 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1.10s infinite alternate;}/* r */
+        .c37 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1.20s infinite alternate;}/* e */
+        .c38 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1.30s infinite alternate;}/* e */
+        .c39 { transform: skew(var(--skew-minus)); animation: animation-01 var(--ani-duration) ease-in-out 1.40s infinite alternate;}/* . */
+        /* the green time values declare how long the animation-start will be delayed for this letter after the file is loaded */
+
+        /* animation for the top and bottom line */
+        @keyframes animation-01 {
+            0%   { transform: skew(var(--skew-minus));}
+            100% {transform: skew(var(--skew-plus));}
+        }
+        /* animation for the middle line */
+        @keyframes animation-02 {
+            0%   { transform: skew(var(--skew-plus));}
+            100% {transform: skew(var(--skew-minus));}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="c-margin1"> <!--  creates a seperate container for multiple classes to postion them all at once  -->
+        <span class="c1">t</span><span class="c2">h</span><span class="c3">i</span><span class="c4">s</span><!-- span makes it possible to assign a class to an individual letter -->
+        <!-- this -->
+        <span class="c5">t</span><span class="c6">e</span><span class="c7">x</span><span class="c8">t</span>
+        <!-- text -->
+        <span class="c9">i</span><span class="c10">s</span>
+        <!-- is -->
+    </div>
+    <div class="c-margin2">
+        <span class="c11">t</span><span class="c12">i</span><span class="c13">l</span><span class="c14">t</span><span class="c15">i</span><span class="c16">n</span><span class="c17">g</span>
+        <!-- tilting -->
+        <span class="c18">b</span><span class="c19">e</span><span class="c20">t</span><span class="c21">w</span><span class="c22">e</span><span class="c23">e</span><span class="c24">n</span>
+        <!-- between -->
+    </div>
+    <div class="c-margin3">
+        <span class="c25">-</span><span class="c26">3</span><span class="c27">0</span>
+        <!-- -30 -->
+        <span class="c28">a</span><span class="c29">n</span><span class="c30">d</span>
+        <!-- and -->
+        <span class="c31">3</span><span class="c32">0</span>
+        <!-- 30 -->
+        <span class="c33">d</span><span class="c34">e</span><span class="c35">g</span><span class="c36">r</span><span class="c37">e</span><span class="c38">e</span><span class="c39">.</span>
+        <!-- degree -->
+    </div>
+                
+</body>
+</html>

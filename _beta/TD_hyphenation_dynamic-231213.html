@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyphenation animation</title>
+
+  <style>
+  @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+  }
+
+  body {
+    font-family: Konsole;
+    font-size: 2em;
+  }
+
+div { 
+  /* animating the box in which the sentence is placed: */
+  /* the border defines the width, style, and color of the box.*/
+  border: 1px solid black;
+  animation-name: boxsize;
+  /* the animation-duration defines how long the animation takes.*/
+  animation-duration: 3s;
+  /* the animation-direction defines whether or not the animation should play in reverse on alternate cycles.*/
+  animation-direction: alternate;
+  /* the animation-iteration-count defines the number of times an animation cycle is played. infinite means the animation will play over and over again.*/
+  animation-iteration-count: infinite;
+  /* the animation-timing-function defines how the animation will progress over one cycle of its duration.*/
+  animation-timing-function: linear;
+}
+ 
+@keyframes boxsize {
+  0% {
+    width: 55px;
+  }
+  100% {
+    width: 220px;
+  }
+}
+
+div.a {
+    /* No hyphen; overflow if needed */
+  hyphens: none;
+}
+
+div.b {
+    /* Hyphen only at ‐ or ­ (if needed) */
+  hyphens: manual;
+}
+
+div.c {
+    /* Hyphen where the algorithm is deciding (if needed) */
+  hyphens: auto;
+}
+</style>
+</head>
+<body>
+
+<h4>hyphens: none</h4>
+<pp class="one">No hyphen; overflow if needed.</p>
+<div class="a">A veryveryvery long word.</div>
+
+<h4>hyphens: manual</h4>
+<pp class="two">Hyphen only at &hyphen; or &shy; (if needed).</p>
+<div class="b">A veryvery-very long word.</div>
+
+<h4>hyphens: auto</h4>
+<p class="three">Hyphen where the algorithm is deciding (if needed).</p>
+<div class="c">A currently long word.</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform</title>
+    <style>
+         
+            @font-face{
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 2em;
+        }
+
+        .uppercase { /* All characters as capital letters.*/
+                    text-transform: uppercase;
+        }
+
+        .lowercase { /* All characters as lower case letters.*/
+                     text-transform: lowercase;
+        }
+
+        .capitalize {/* The first letter of a word is capitalized.*/
+                    text-transform: capitalize;
+        }
+
+        .full-width {/*All characters are displayed in a square box that corresponds to the size of the square.*/
+                    text-transform: full-width;
+        }
+    </style>
+</head>
+
+<body> 
+    
+    <p class="uppercase">uppercase <br>This paragraph is written in capital letters only.</p>
+    <p class="lowercase">lowercase <br>This paragraph is written in lower case only.</p>
+    <p class="capitalize">capitalize <br>In this paragraph the first letter of each word is capitalized.</p>
+    <p class="full-width">full-width <br>All characters are displayed in a square box that corresponds to the size of the square.</p>
+
+</body>
+
+
+</html>

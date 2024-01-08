@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration-thickness</title>
+    <style>
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+            /* font-variation-settings: "wght" 450, "wdth" 110;             */
+        }
+
+        p {
+            text-decoration-line: underline;
+        }
+
+        .class-1  {
+            text-decoration-thickness: 1%;
+        }            
+        .class-2  {
+            text-decoration-thickness: auto;
+        }            
+        .class-3  {
+            text-decoration-thickness: .3em;
+        }            
+        .class-4  {
+            text-decoration-thickness: 200px;
+        }
+
+            
+    </style>
+
+</head>
+<body>
+    <p class="class-1"> thinly underlined: 1% </p>
+    <p class="class-2"> normally underlined: auto </p>
+    <p class="class-3"> thickly underlined: 0.3em </p>
+    <p class="class-4"> underboxed: 200px </p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration-color</title>
+    <style>
+
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+        }
+
+        p {
+            text-decoration-line: line-through;
+            text-decoration-thickness: 25%;
+        }
+
+        .class-1  {
+            text-decoration-color: rgba(0,0,0,0);
+        }            
+        .class-2  {
+            text-decoration-color: rgba(0,0,0,.33);
+        }            
+        .class-3  {
+            text-decoration-color: rgba(0,0,0,.66);
+        }            
+        .class-4  {
+            text-decoration-color: rgba(0,0,0,1);
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <p class="class-1"> invisibly striked through </p>
+        <p class="class-2"> very transparently striked through </p>
+        <p class="class-3"> little transparently striked through </p>
+        <p class="class-4"> visibly striked through </p>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Variant-Caps Animation</title>
+    <style>
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+        body {
+            font-family: Konsole;
+            font-size: 2em;
+        }
+
+        p {
+            text-align: left;
+            animation-name: font-variant;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            animation-timing-function: linear;
+        }
+
+        @keyframes font-variant {
+            0% {
+                font-variant-caps:normal;
+            }
+
+            50%  {
+                font-variant-caps: small-caps;
+            }
+
+            100%  {   
+                font-variant-caps: all-small-caps;
+            }
+
+        }
+
+        </style>
+</head>
+
+<body>    
+<p>This Is A Paragraph With Different Font Characteristics.<br>
+    Normal, Small-Caps And All-Small-Caps</p>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Font Stretch Static</title>
+    <style>
+        
+        /*I want to have a delicate frame with relatively small font and white space around it. Hence it is centered and with padding from the top: */
+
+        @font-face {
+          font-family: Konsole;
+          src: url(Konsolev1.1-VF.ttf);
+        }
+        body {
+          font-family: Konsole;
+          font-size: 1em;
+          text-align: center;
+        }    
+
+        div {
+            padding: 50px;
+            }
+        
+
+            .class-1{
+                    font-variation-settings: 'wdth' 85;
+            }
+
+            .class-2{
+                    font-stretch: 90%;
+            }
+
+            .class-3{
+                    font-stretch: 105%;
+            }
+
+            .class-4{
+                    font-stretch: 100%;
+            }
+            .class-5 {
+                    font-stretch: 120%;                
+            }
+            .class-6 {
+                    font-stretch: 110%;                
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- text should approximately result in a square, to contrast the static and the moving -->
+    <!-- I chose a descriptive wording because it, in contrast to a question or a demand, transmits the feeling of still observation -->
+
+<div>
+    <p class="class-4"> can you spot if this text has a font stretch of 100% or </p>
+    <p class="class-1"> can you spot if this text has a font stretch of 85% or </p>
+    <p class="class-5"> can you spot if this text has a font stretch of 120% or </p>
+    <p class="class-2"> can you spot if this text has a font stretch of 90% or </p>
+    <p class="class-3"> can you spot if this text has a font stretch of 105% or </p>
+    <p class="class-6"> can you spot if this text has a font stretch of 110% ? </p>
+
+</div>
+
+</body>
+
+</html>

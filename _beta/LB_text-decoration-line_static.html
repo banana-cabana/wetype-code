@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration-line</title>
+    <style>
+
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+        
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+        }
+
+        .class-1  {
+            text-decoration-line: underline;
+        }
+        .class-2  {
+            text-decoration-line: overline;
+        }
+        .class-3 {
+            text-decoration-line: line-through;
+        }
+        .class-4 {
+            text-decoration-line: underline overline line-through;
+        }
+            
+    </style>
+
+    </head>
+    <body>
+        <p class="class-1"> underlined text</p>
+        <p class="class-2"> overlined text </p>
+        <p class="class-3"> throughlined text </p>
+        <p class="class-4"> underoverthroughlined text </p>
+    </body>
+</html>

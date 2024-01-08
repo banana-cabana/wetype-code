@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typewriter</title>
+    
+<style>
+     @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+            display: inline-block;
+       
+          }
+
+   
+
+
+  .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid; 
+  width: 0;
+  animation-name: typing;
+  animation-duration: 2.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+</style>
+</head>
+
+<body>
+  
+        <p class="typed">This is a paragraph of typed text.</p
+     
+</body>
+</html>

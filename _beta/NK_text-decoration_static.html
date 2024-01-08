@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration</title>
+    
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../fonts/Konsolev1.1-VF.ttf);
+    }
+       
+    body {
+      font-family: Konsole;
+      font-size: 2em;
+      /* font-variation-settings: "wght" 450, "wdth" 110; */      
+
+    .V01 {
+      text-decoration: underline;
+    }
+    .V02 {
+      text-decoration: underline 10px;
+    }
+    .V03 {
+      text-decoration: underline dotted;
+    }
+    .V04 {
+      text-decoration: underline dotted 10px;
+    }
+    .V05 {
+      text-decoration: wavy underline;
+    }
+    .V06 {
+      text-decoration: wavy underline 0.2px;
+    }
+   .V07{
+      text-decoration: underline overline;
+    }
+    .V08 {
+      text-decoration: line-through;
+     }
+    .V09 {
+     text-decoration: underline overline line-through;
+    }
+    }
+
+  </style>
+</head>
+
+
+<body>  
+  <p class="V01"> underline </p>
+  <p class="V02"> thick underline </p>
+  <p class="V03"> underline dotted </p>
+  <p class="V04"> thick underline dotted </p>
+  <p class="V05"> wavy underline </p>
+  <p class="V06"> thin wavy underline </p>
+  <p class="V07"> underline & overline </p>
+  <p class="V08"> line-through </p>
+  <p class="V09"> linethrough & underline & overline </p>
+</body>
+
+</html>

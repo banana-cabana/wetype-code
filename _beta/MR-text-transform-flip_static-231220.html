@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform Flip</title>
+    <style>
+        
+     @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+        body {
+            font-family: Konsole;
+            font-size: 2em;
+            
+        }
+        
+        span { display:inline-block;
+        }
+           
+
+     .flip-H { 
+        transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        margin-bottom: 50px;
+    
+        
+        
+    }
+
+    .flip-V {
+        transform: scale(1, -1);
+        -moz-transform: scale(1, -1);
+        -webkit-transform: scale(1, -1);
+        -o-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+     
+        
+        
+        
+    }
+
+</style>
+</head>
+
+<body>
+    
+    <span>Text Flip Horizontal</span><br>
+    <span class="flip-H">Text Flip Horizontal</span><br>
+
+
+    
+    <span>Text Flip Vertikal</span><br>
+    <span class="flip-V">Text Flip Vertikal</span><br>
+
+
+
+</body>
+</html>

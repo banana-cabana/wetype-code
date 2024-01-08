@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaaable Letter Width Aaanimaaation</title>
+    <style>
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+        }
+
+        @keyframes example {
+            from {
+                /* font-variation-settings: "wght" 100;
+                font-variation-settings: "wdth" 50; */
+                font-variation-settings: "wght" 100, "wdth" 50;
+                /* color: rgba(0,0,0,0.5); */
+                /* font-size: .5em; */
+            }
+            to {
+                /* font-variation-settings: "wght" 900;
+                font-variation-settings: "wdth" 200; */
+                font-variation-settings: "wght" 800, "wdth" 200;
+                /* color: rgba(0,0,0,1); */
+                /* font-size: 1em; */
+            } 
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(7, 96px);
+            grid-template-rows: repeat(7, 96px);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }   
+
+        .myClass {
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            /* width:72px;
+            height:72px; */
+            
+            text-align: center;
+            /* justify-content: center; */
+        }
+
+        .myClass:nth-child( 1) { animation-delay:     0s }
+        .myClass:nth-child( 2) { animation-delay:  100ms }
+        .myClass:nth-child( 3) { animation-delay:  200ms }
+        .myClass:nth-child( 4) { animation-delay:  300ms }
+        .myClass:nth-child( 5) { animation-delay:  400ms }
+        .myClass:nth-child( 6) { animation-delay:  500ms }
+        .myClass:nth-child( 7) { animation-delay:  600ms }
+        .myClass:nth-child( 8) { animation-delay:  700ms }
+        .myClass:nth-child( 9) { animation-delay:  800ms }
+        .myClass:nth-child(10) { animation-delay:  900ms }
+        .myClass:nth-child(11) { animation-delay: 1000ms }
+        .myClass:nth-child(12) { animation-delay: 1100ms }
+        .myClass:nth-child(13) { animation-delay: 1200ms }
+        .myClass:nth-child(14) { animation-delay: 1300ms }
+        .myClass:nth-child(15) { animation-delay: 1400ms }
+        .myClass:nth-child(16) { animation-delay: 1500ms }
+        .myClass:nth-child(17) { animation-delay: 1600ms }
+        .myClass:nth-child(18) { animation-delay: 1700ms }
+        .myClass:nth-child(19) { animation-delay: 1800ms }
+        .myClass:nth-child(20) { animation-delay: 1900ms }
+        .myClass:nth-child(21) { animation-delay: 2000ms }
+        .myClass:nth-child(22) { animation-delay: 2100ms }
+        .myClass:nth-child(23) { animation-delay: 2200ms }
+        .myClass:nth-child(24) { animation-delay: 2300ms }
+        .myClass:nth-child(25) { animation-delay: 2400ms }
+        .myClass:nth-child(26) { animation-delay: 2500ms }
+        .myClass:nth-child(27) { animation-delay: 2600ms }
+        .myClass:nth-child(28) { animation-delay: 2700ms }
+        .myClass:nth-child(29) { animation-delay: 2800ms }
+        .myClass:nth-child(30) { animation-delay: 2900ms }
+        .myClass:nth-child(31) { animation-delay: 3000ms }
+        .myClass:nth-child(32) { animation-delay: 3100ms }
+        .myClass:nth-child(33) { animation-delay: 3200ms }
+        .myClass:nth-child(34) { animation-delay: 3300ms }
+        .myClass:nth-child(35) { animation-delay: 3400ms }
+        .myClass:nth-child(36) { animation-delay: 3500ms }
+        .myClass:nth-child(37) { animation-delay: 3600ms }
+        .myClass:nth-child(38) { animation-delay: 3700ms }
+        .myClass:nth-child(39) { animation-delay: 3800ms }
+        .myClass:nth-child(40) { animation-delay: 3900ms }
+        .myClass:nth-child(41) { animation-delay: 4000ms }
+        .myClass:nth-child(42) { animation-delay: 4100ms }
+        .myClass:nth-child(43) { animation-delay: 4200ms }
+        .myClass:nth-child(44) { animation-delay: 4300ms }
+        .myClass:nth-child(45) { animation-delay: 4400ms }
+        .myClass:nth-child(46) { animation-delay: 4500ms }
+        .myClass:nth-child(47) { animation-delay: 4600ms }
+        .myClass:nth-child(48) { animation-delay: 4700ms }
+        .myClass:nth-child(49) { animation-delay: 4800ms }
+
+    </style>
+</head>
+
+<body>    
+    <div class="wrapper">
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+        <div class="myClass">A</div>
+    </div>
+</body>
+
+</html>

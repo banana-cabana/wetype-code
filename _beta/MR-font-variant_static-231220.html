@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Variant-Caps </title> <!--"Controls the usage of alternate glyphs for capital letters "-->
+    <style>
+      @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+        body {
+            font-family: Konsole;
+            font-size: 2em;
+        }
+        
+        .normal { /* Standard font style - Deactivates the use of alternate glyphs*/
+            font-variant-caps: normal;
+        }
+
+        .small { /* Shows small capital letters - digital small capitals.
+                    Small caps are created from "digital" characters - the browser makes the first letter larger and the following letters smaller. 
+                    These digital small caps can be recognized by the thicker stroke width of the first letter. 
+                    Real small caps are created by the font designer and represent an independent font style within a font package. */
+            font-variant-caps: small-caps;
+        }
+
+        .allsmall { /* Places a text in capital letters, but in the x-height of the normal font.*/
+        font-variant-caps: all-small-caps;
+        }
+
+        .petite { /* Shows small capital letters - digital small capitals.
+            Typically, the height of a small capital glyph will be one ex, the same height as most lowercase characters in the font. In fonts with relatively low x-height, however,
+            small caps may be somewhat larger than this. In some fonts, small caps glyphs are 30% larger than x-height, and 70% the height of full capitals. To differentiate between these two 
+            alternatives, the x-height form is sometimes called petite caps, preserving the name "small caps" for the larger variant. 
+            When the support for the petite caps feature is absent from a desktop-publishing program, x-height small caps are often substituted.*/
+            font-variant-caps: petite-caps;
+        }
+
+        .allpetite { /* Places a text in capital letters, but in the x-height of the normal font.
+            If this keyword is used on a font that doesn't support this feature, the property behaves as though all-small-caps had been specified instead.*/
+            font-variant-caps: all-petite-caps;
+        }
+
+        .unicase { /* shows a mixture of lowercase letters for uppercase letters and normal lowercase letters */
+            font-variant-caps: unicase;
+        }
+
+        .titling { /* Displays titling capitals. 
+            Titling capitals are a variant of uppercase designed for heading and titles. 
+            The stroke width is reduced for use at larger point sizes where the stroke weight used in smaller text sizes would be too heavy.
+            If this is used on a font that doesn't support this feature, the property has no visible effect.*/
+            font-variant-caps: titling-caps;
+        }
+
+        .initial { /* Resets font to default value.*/
+            font-variant-caps: initial;
+        }
+
+    </style>
+</head>
+
+<body>    
+
+<p class="normal">
+    normal: standard font style <br>
+    
+ </p>
+
+<p class="small"> 
+    Small-Caps: Shows Small Capital Letters - Digital Small Capitals<br>
+    
+</p>
+
+<p class="allsmall">
+    all-small-caps:  Places a text in capital letters, but in the x-height of the normal font<br>
+   
+</p>
+
+<p class="initial"> 
+    initial: resets font to default value<br>
+    
+    
+</p>
+
+
+</body>
+
+
+</html>

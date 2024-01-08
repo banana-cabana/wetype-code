@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Transform Flip</title>
+    
+<style>
+      @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 2em;
+            display: inline-block;
+        }
+        
+
+    
+
+                
+
+   .Flip-H  {
+            text-align: left;
+            animation-name: Flip-H;
+            animation-duration: 2s;
+            animation-delay: 2;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            animation-timing-function: ease;
+            
+        }
+
+    .Flip-V  {
+            text-align: left;
+            animation-name: Flip-V;
+            animation-duration: 2s;
+            animation-delay: 2;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            animation-timing-function: ease;
+        }
+
+    @keyframes Flip-H{
+            0% {
+                transform: scale(0, 1);
+            }
+           
+            100% {   
+                transform: scale(-1, 1);
+                -moz-transform: scale(-1, 1);
+                -webkit-transform: scale(-1, 1);
+                -o-transform: scale(-1, 1);
+                -ms-transform: scale(-1, 1);
+            }
+        }
+
+
+        @keyframes Flip-V{
+            0% {
+                transform: scale(0, 1);
+            }
+           
+            100% {   
+                transform: scale(1, -1);
+                -moz-transform: scale(1, -1);
+                -webkit-transform: scale(1, -1);
+                -o-transform: scale(1, -1);
+                -ms-transform: scale(1, -1);
+        
+            }
+        }
+    
+</style>
+</head>
+
+<body>
+    <p>Text Flip Horizontal</p>
+    <p class="Flip-H">Text Flip Horizontal</p>
+
+    <p>Text Flip Vertikal</p>
+    <p class="Flip-V">Text Flip Horizontal</p>
+
+</body>
+</html>

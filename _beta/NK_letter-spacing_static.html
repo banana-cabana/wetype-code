@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>letter-spacing</title>
+  
+  <style>
+    @font-face {
+        font-family: Konsole;
+        src: url(../fonts/Konsolev1.1-VF.ttf);
+    }
+
+    body {
+        font-family: Konsole;
+        font-size: 2em;
+        /* font-variation-settings: "wght" 450, "wdth" 110; */
+    
+    .V01 {
+      letter-spacing: -4px;       /*The unit px was defined to be small but still visible. It is not dependent on the current font and is also not related to the absolute units.*/
+    }
+    
+    .V02 {
+      letter-spacing: normal;     /*“normal“ or "initial" ...... */
+    }
+
+    .V03 {
+      letter-spacing: 10px;      /* */
+    }
+
+    .V04 {
+      letter-spacing: 1em;        /*In contrast to pixels, the font unit em (from typesetting: equal to M) has no fixed value, as em is always relative to the defined font size in pixels.*/
+    }
+
+    .V05 {
+      letter-spacing: 3rem;       /*rem is calculated in the same way as em. The difference lies in the inheritance. The rem value is based on the root element (html). What is meant here is the font size for html and not the font size specification for the documet-body.*/
+    }
+    }  
+  </style>
+
+</head>
+
+
+<body>  
+  <p class="V01"> This sentence uses a letterspacing of -4px </p>
+  <p class="V02"> This sentence uses the letterspacing "normal" </p>
+  <p class="V03"> This sentence uses a letterspacing of 10px </p>
+  <p class="V04"> This sentence uses a letterspacing of 1em </p>
+  <p class="V05"> This sentence uses a letterspacing of 3rem </p>
+
+</body>
+
+
+</html>
+

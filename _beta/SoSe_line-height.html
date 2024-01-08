@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-height</title>
+    <style>
+        @font-face {
+        font-family: Konsole;
+        src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {
+            font-family: Konsole;
+            font-size: 4em;
+        }
+        
+        p {
+            border: 1px solid #000;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+            
+        /*The line-height property specifies the height of a line.
+        Note: Negative values are not allowed.
+        CSS Syntax: line-height: normal|number|length|initial|inherit;*/
+
+        .class-1 {
+        line-height: 0;
+        }
+        .class-2 {
+        line-height: 0.5;
+        }
+        .class-3 {
+        line-height: normal;
+        }
+        .class-4 {
+        line-height: 2;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <p class="class-1">Setting line-height: 0 is not recommended as it can lead to undesirable rendering and readability issues.</p>
+        <p class="class-2">Using a line height of 0.5 is not recommended for accessibility reasons. It can adversely impact readability and user experience.</p>
+        <p class="class-3">Choosing an appropriate and <u>normal</u> line height is crucial for enhancing readability in your design.</p>
+        <p class="class-4">Using a line height of 2 can result in excessive spacing between lines, potentially hindering readability and disrupting the visual flow of text.</p>
+    </body>
+
+</html>

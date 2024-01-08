@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      @font-face {
+       font-family: Konsole;
+       src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 150vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    
+    .scatter-words {
+      position: relative;
+      font-family: 'Konsole';
+      font-size: 120px;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Styling for each falling word */
+    .word {
+      position: absolute;
+      animation: fall 3s ease forwards infinite; /* Animation properties: fall duration, ease, forwards to keep final state, infinite for looping */
+    }
+
+    /* Keyframes for the fall animation */
+    @keyframes fall {
+      to {
+        transform: translateY(80vh);
+      }
+    }
+
+    /* Individual words with positioning and rotation */
+    .word1 { left: 30%; top: 30%; transform: rotate(0deg); animation-delay: 0s; } /* No delay for the first word */
+    .word2 { left: 50%; top: 30%; transform: rotate(-20deg); animation-delay: 0.5s; } /* 0.5s delay for the second word */
+    .word3 { left: 80%; top: 50%; transform: rotate(45deg); animation-delay: 1s; } /* 1s delay for the third word */
+    .word4 { left: 30%; top: 70%; transform: rotate(-15deg); animation-delay: 1.5s; } /* 1.5s delay for the fourth word */
+    .word5 { left: 70%; top: 90%; transform: rotate(10deg); animation-delay: 2s; } /* 2s delay for the fifth word */
+    .word6 { left: 70%; top: 110%; transform: rotate(10deg); animation-delay: 2.5s; } /* 2.5s delay for the sixth word */
+  </style>
+</head>
+<body>
+  
+  <div class="scatter-words">
+    <!-- Individual falling words -->
+    <div class="word word1">falling</div>
+    <div class="word word2">words</div>
+    <div class="word word3">falling</div>
+    <div class="word word4">words</div>
+    <div class="word word5">falling</div>
+    <div class="word word6">words</div>
+  </div>
+</body>
+</html>

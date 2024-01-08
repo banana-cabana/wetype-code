@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Word Break</title>
+    <style>
+        
+        /*I want to have a delicate frame with relatively small font and white space around it. Hence it is centered and with padding from the top: */
+
+        @font-face {
+          font-family: Konsole;
+          src: url(Konsolev1.1-VF.ttf);
+        }
+        body {
+          font-family: Konsole;
+          font-size: 1em;
+          text-align: center;
+        }
+
+        div {
+            padding: 50px;
+            width: 80px;
+        }
+
+        .class-1 {
+            word-break: keep-all;
+        }
+
+        .class-2 {
+            word-break: break-word;
+        }
+
+        .class-3 {
+            word-break: break-all;
+        }    
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p class="class-1"> There are uni&shy;maginab&shy;le inc&shy;omprehensib&shy;ilities when words break in wr&shy;ongly spec&shy;ified places. </p>
+        <p class="class-2"> There are unimaginable incomprehensibilities when words break in automatically specified places. </p>
+        <p class="class-3"> There are unimaginable incomprehensibilities when words can break after every letter. </p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-auflösend animation</title>
+    <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+    body {
+      font-family: Konsole;
+      font-size: 4em;
+    }
+
+    span {
+    /* animating the flow of easing in and out: */
+    animation-name: opacity;
+    /* the animation-duration defines how long the animation takes.*/
+    animation-duration: 15s;
+    /* the animation-timing-function defines how the animation will progress over one cycle of its duration.*/
+    animation-timing-function: ease-in-out;
+    /* the animation-direction defines whether or not the animation should play in reverse on alternate cycles.*/
+    animation-direction: normal;
+    /* the animation-iteration-count defines the number of times an animation cycle is played. infinite means the animation will play over and over again.*/
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes opacity {
+  /* the opacity tells you how strong the color of the text.*/
+  0%    {opacity: 100%;}
+  10%   {opacity: 0%;}
+  50%   {opacity: 0%;}
+  90%   {opacity: 0%;}
+  100%  {opacity: 100%;}
+
+  }
+span {
+  display: inline-block;
+}
+   /* the animation-delay defines when the animation will start.*/
+  .two {animation-delay: 1s}
+  .three {animation-delay: 2s;}
+  .four {animation-delay: 3s;}
+  .five {animation-delay: 4s;}
+  .six {animation-delay: 5s;}
+  .seven {animation-delay: 6s;}
+  .eight {animation-delay: 7s;}
+  .nine {animation-delay: 8s;}
+  .ten {animation-delay: 9s;}
+
+</style>
+
+  <body>
+    <h1>
+      <span>One</span>
+      <span class="two">small</span>
+      <span class="three">text</span>
+      <span class="four">that</span>
+      <span class="five">slowley</span>
+      <span class="six">starts</span>
+      <span class="seven">to</span>
+      <span class="eight">disappear</span>
+      <span class="nine">into</span>
+      <span class="ten">nothing</span>
+    </h1>
+  </body>

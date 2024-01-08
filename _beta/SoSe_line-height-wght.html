@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>line-height-wght</title>
+
+        <style>
+        @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+        }
+
+        body {  
+            font-family: Konsole;
+            font-size: 4em;
+        }
+
+@keyframes line-height-animation {
+    0% {
+        line-height: 0;
+        font-variation-settings: "wght" 100;
+    }
+    33% {
+        line-height: 0;
+        font-variation-settings: "wght" 300;
+    }
+    66% {
+        line-height: 2;
+        font-variation-settings: "wght" 500;
+    }s
+    100% {
+        line-height: 2;
+        font-variation-settings: "wght" 700;
+    }
+}
+
+.class-1 {
+    animation-name: line-height-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+        </style>
+</head>
+    
+    <body>
+        <p class="class-1">The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text.</p>
+    </body>
+
+</html>

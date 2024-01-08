@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hyphenation</title>
+
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+      
+    body {
+    font-family: Konsole;
+    font-size: 2em;
+   }
+
+   div { 
+    width: 150px;
+    border: 1px solid black;
+   }
+   
+   div.a {
+    /* No hyphen; overflow if needed */
+    hyphens: none;
+   }
+   
+   div.b {
+    /* Hyphen only at ‐ or ­ (if needed) */ 
+    hyphens: manual;
+   }
+   
+   div.c {
+    /* Hyphen where the algorithm is deciding (if needed) */
+    hyphens: auto;
+    }
+</style>
+</head>
+<body>
+
+<h4>hyphens: none</h4>
+<p class="one">No hyphen; overflow if needed.</p>
+<div class="a">A veryveryvery long word.</div>
+
+<h4>hyphens: manual</h4>
+<p class="two">Hyphen only at &hyphen; or &shy; (if needed).</p>
+<div class="b">A veryvery-very long word.</div>
+
+<h4>hyphens: auto</h4>
+<p class="three"></p>Hyphen where the algorithm is deciding (if needed).</p>
+<div class="c">A extraordinarily long word.</div>
+
+</body>
+</html>

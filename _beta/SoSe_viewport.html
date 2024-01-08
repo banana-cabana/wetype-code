@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive: Viewport</title>
+
+        <style>
+            @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+            }
+
+                body {
+            font-family: Konsole;
+            font-size: 4em;
+            }
+            
+            /*The viewport is the user's visible area of a web page.
+            You can take control over the viewport, through the <meta> tag. This gives the browser instructions on how to control the page's dimensions and scaling.
+            The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+            The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.*/
+            
+            p {
+                word-break: break-all;
+                /*hyphens: auto;*/
+            }
+
+            .class-1 {
+                width: 100vw; /*Since the body element is set to 100vw, or 100% of the viewport's width, it will take up the full width available to it. So if you resize your browser  to 690 pixels wide, then the body will take up all 690 pixels in width.*/
+            }
+            .class-2 {
+                width: 50vw;
+            }
+            .class-3 {
+                width: 0vw; 
+            }
+        </style>
+
+</head>
+    <body>
+        <p class="class-1">The viewport, ranging from 0 to 100, defines the visible area of a web page within a user's browser. A value of 0 indicates the leftmost edge, while 100 signifies the rightmost edge.</p>
+        <p class="class-2">Understanding and optimizing the viewport is essential for responsive web design, ensuring content adapts seamlessly across various devices and screen sizes.</p>
+        <p class="class-3">width: 0vw</p>
+    </body>
+</html>

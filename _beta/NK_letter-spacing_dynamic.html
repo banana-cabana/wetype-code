@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>letter-spacing-animiert</title>
+  
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../fonts/Konsolev1.1-VF.ttf);
+    } 
+    body {
+      font-family: Konsole;
+      font-size: 2em;
+    }
+
+    @keyframes letter-spacing-animation1 {
+      from {
+        letter-spacing: -50px;
+      }
+      to {
+        letter-spacing: 1px;
+      }
+    }
+
+    .V01 {
+      letter-spacing: -4px;
+      animation-name: letter-spacing-animation1;   
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    .V0 {
+      letter-spacing: normal; 
+    }
+    .V0 {
+      letter-spacing: 10px; 
+    }
+    .V0 {
+      letter-spacing: 1em; 
+    } 
+    @keyframes letter-spacing-animation2 {
+      from        {
+        letter-spacing: -6rem;
+      }
+      to {
+        letter-spacing: 3rem;
+      }
+    }
+    .V05 {
+        letter-spacing: 3rem;    
+        animation-name: letter-spacing-animation2;   
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+  </style>
+</head>
+
+
+<body>  
+  <p class="V01"> This sentence uses a letterspacing from -50px to 1px</p>
+  <p class="V02"> This sentence uses the letterspacing "normal"</p>
+  <p class="V03"> This sentence uses a letterspacing of 10px</p>
+  <p class="V04"> This sentence uses a letterspacing of 1em</p>
+  <p class="V05"> This sentence uses a letterspacing from -6rem to 2rem</p>
+
+</body>
+
+
+</html>
+

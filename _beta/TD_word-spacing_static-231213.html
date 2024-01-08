@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-spacing</title>
+
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+
+    body {
+    font-family: Konsole;
+    font-size: 3em;
+  }
+
+    .one {
+      /* the word-spacing in the sentence is normal */
+  .one
+  height:50px;
+  background-color:#FFFFFF;
+  word-spacing: normal;
+    }
+
+    .two {
+    /* the word-spacing in the sentence is set to a distance of 50px between each word*/
+  background-color:#FFFFFF;
+  word-spacing: 50px;
+    }
+
+    .three {
+    /* the word-spacing in the sentence is set to a distance of -50px between each word. The - shrinkes the distance between the words */
+  background-color:#FFFFFF;
+  word-spacing: -50px;
+    }
+
+    .four {
+    /* the word-spacing in the sentence is set to a distance of 10cm between each word. The 10cms also work as a unit */
+  background-color:#FFFFFF;
+  word-spacing: 10cm;
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <p class="one">This example demonstrates the word-spacing property with normal word-spacing.</p>
+  <p class="two">This example demonstrates the word-spacing property with 50px word-spacing.</p>
+  <p class="three">This example demonstrates the word-spacing property with -50px word-spacing.</p>
+  <p class="four">This example demonstrates the word-spacing property with 10cm word-spacing.</p>
+
+</body>
+</html>

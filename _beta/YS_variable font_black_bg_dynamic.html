@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable Font Animation</title>
+  <style>
+    @font-face {
+      font-family: 'Konsole';
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+
+    /* Styling for the body */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color:black;
+    }
+
+    /* Styling for the animated text */
+    .textbook-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Styling for individual text lines */
+    .text-line {
+      font-family: 'Konsole', monospace;
+      font-variation-settings: 'wght' 400, 'wdth' 100, 'ital' 0; /* Initial settings for weight, width, and italic */
+      font-size: 2.5rem;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin: 2px;
+      padding: 2px;
+      background-color: #fff;
+      animation: fontAnimation 8s infinite; /* Animation duration and infinite loop */
+    }
+
+    /* Keyframes for the font animation */
+    @keyframes fontAnimation {
+      0% {
+        font-variation-settings: 'wght' 400, 'wdth' 100, 'ital' 0; /* Starting point of the animation */
+      }
+      25% {
+        font-variation-settings: 'wght' 600, 'wdth' 75, 'ital' 1; /* Midway through the animation */
+      }
+      50% {
+        font-variation-settings: 'wght' 900, 'wdth' 50, 'ital' 0; /* Another point in the animation */
+      }
+      75% {
+        font-variation-settings: 'wght' 700, 'wdth' 125, 'ital' 1; /* Another point in the animation */
+      }
+      100% {
+        font-variation-settings: 'wght' 400, 'wdth' 100, 'ital' 0; /* Ending point of the animation */
+      }
+    }
+
+    /* animation delays */
+    .text-line:nth-child(2) {
+      animation-delay: 2s; /* Delay for the second line */
+    }
+
+    .text-line:nth-child(3) {
+      animation-delay: 4s; /* Delay for the third line */
+    }
+  </style>
+</head>
+<body>
+  <div class="textbook-text">
+    <p class="text-line">time passes by</p>
+    <p class="text-line">time passes by</p>
+    <p class="text-line">time passes by</p>
+  </div>
+</body>
+</html>

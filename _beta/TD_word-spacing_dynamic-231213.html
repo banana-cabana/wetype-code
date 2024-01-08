@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-spacing animation</title>
+
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+
+    body {
+    font-family: Konsole;
+    font-size: 3em;
+  }
+
+    .one {
+      /*animating the word-spacing in the sentence: */
+  .one
+  height:50px;
+  animation-name: one;
+  /*defines how long the animation takes.*/
+  animation-duration: 15s;
+  /*defines whether or not the animation should play in reverse on alternate cycles.*/
+  animation-direction: alternate;
+  /*defines the number of times an animation cycle is played. infinite means the animation will play over and over again.*/
+  animation-iteration-count: infinite;
+  /*defines how the animation will progress over one cycle of its duration.*/
+  animation-timing-function: linear;
+  /*defines when the animation will start.*/
+  animation-delay: 0.5s;
+    }   
+
+@keyframes one {
+  0%{
+    word-spacing:0px;
+  }
+  10%{
+    word-spacing:-40px;
+  }
+  25%{
+    word-spacing: -150px;
+  }  
+  40%{
+    word-spacing:-270px;
+  }
+  50%{
+    word-spacing:-300px;
+  }
+  60%{
+    word-spacing:-270px;
+  }
+  75%{
+    word-spacing: -150px;
+  } 
+  90%{
+    word-spacing:-40px;
+  } 
+  100%{
+    word-spacing:0px;
+  }
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <p align="center" class="one">This text demonstrates an animation of the word-spacing property.</p>
+
+</body>
+</html>

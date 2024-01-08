@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive: Viewport animation</title>
+
+        <style>
+             @font-face {
+            font-family: Konsole;
+            src: url(../_fonts/Konsolev1.1-VF.ttf);
+            }
+
+                body {
+            font-family: Konsole;
+            font-size: 4em;
+            }
+            
+            /*The viewport is the user's visible area of a web page.
+            You can take control over the viewport, through the <meta> tag. This gives the browser instructions on how to control the page's dimensions and scaling.
+            The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+            The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.*/
+            
+            p {
+                /*word-break: break-all;*/
+                hyphens: auto;
+            }
+            
+            @keyframes width-animation {
+                from {
+                    width: 0vw;
+                }
+                to {
+                    width: 100vw;
+                }
+            }
+
+            .class-1 {
+            animation-name: width-animation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p class="class-1">The viewport, ranging from 0 to 100, defines the visible area of a web page within a user's browser. A value of 0 indicates the leftmost edge, while 100 signifies the rightmost edge.</p>
+    </body>
+
+</html>

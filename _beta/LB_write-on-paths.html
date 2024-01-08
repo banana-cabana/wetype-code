@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-decoration-line</title>
+  <style>
+    @font-face {
+      font-family: Konsole;
+      src: url(../_fonts/Konsolev1.1-VF.ttf);
+    }
+    body {
+      /* Also applies on text inside SVG elements */
+      font-family: Konsole;
+      /* Choose the size to fit exactly around the circle */
+      font-size: 1.74em;
+    }
+    svg {
+      /* Withgout this line the SVG fills the screen width */
+      width: 500px;
+    }
+  </style>
+</head>
+    <body>
+    <!-- 
+      Cannot comment in SVG, so everything here:
+      - Viewbox: first two numbers move the viewbox, so the slightly smaller circle is centered
+      - Id: Need to set to later place text
+      - d: A path, can be done in AI or Figma and copied into code. Shapes like perfect circles have different syntax and do not work
+      - xlink:href: Link the text path to the path with the same id. # stands for id.
+    -->
+     <svg 
+      viewBox="-45 -45 500 500">
+        <path 
+          id="curve" 
+          fill="transparent" 
+          d="M400 200C400 359.524 274.79 400 200 400C162.185 400 0 371.008 0 200C0 136.415 40.056 0 200 0C386.415 0 400 89.5431 400 200Z"
+        />
+        <text width="500">
+          <textPath xlink:href="#curve">
+            We are writing in a dodgy circle, because we can. We are only doing it using SVG, no CSS required.
+          </textPath>
+        </text>
+      </svg>
+    </body>
+</html> 

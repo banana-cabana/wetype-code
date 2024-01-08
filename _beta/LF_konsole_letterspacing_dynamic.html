@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Letterspacing</title>
+    <style>
+        
+    /*I want to have a delicate frame with relatively small font and white space around it. Hence it is centered and with padding from the top: */
+
+        body {
+            font-family: "Konsole", sans-serif;
+            font-size: 1em;
+            text-align: right;
+        }
+
+        div {
+            padding: 50px;
+        }
+
+
+        @keyframes letter-spacing {
+                0% {
+                        letter-spacing: -22px;
+                }
+                50% {
+                        letter-spacing: 8px;
+                }
+                100% {
+                        letter-spacing: -22px;
+                }
+        }
+        
+        .class-1 {
+               animation-name: letter-spacing;
+               animation-duration: 20s;
+               animation-iteration-count: infinite;
+               animation-timing-function: linear;
+            }
+  
+
+    </style>
+
+</head>
+
+<body>
+
+   
+<div>
+    <p class="class-1"> This Text has a letter spacing of -22 to 8 px and back within 10 seconds. </p>
+
+</div>
+
+</body>
+
+</html>

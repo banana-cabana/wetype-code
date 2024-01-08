@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Font Stretch Dynamic</title>
+    <style>
+        
+        /*I want to have a delicate frame with relatively small font and white space around it. Hence it is centered and with padding from the top: */
+
+        @font-face {
+          font-family: Konsole;
+          src: url(Konsolev1.1-VF.ttf);
+        }
+        body {
+          font-family: Konsole;
+          font-size: 1em;
+          text-align: center;
+        }    
+
+        div {
+            padding: 50px;
+            }
+        
+            @keyframes width-01 {
+                0% {
+                    font-stretch: 85%;
+                }
+                40% {
+                    font-stretch: 105%;
+                }
+                100% {
+                    font-stretch: 85%;
+                }
+            }
+
+            @keyframes width-02 {
+                0% {
+                    font-stretch: 90%;
+                }
+                60% {
+                    font-stretch: 105%;
+                }
+                100% {
+                    font-stretch: 90%;
+                }
+            }
+
+            @keyframes width-03 {
+                0% {
+                    font-stretch: 80%;
+                }
+                80% {
+                    font-stretch: 90%;
+                }
+                100% {
+                    font-stretch: 80%;
+                }
+            }
+
+            @keyframes width-04 {
+                0% {
+                    font-stretch: 105%;
+                }
+                40% {
+                    font-stretch: 120%;
+                }
+                100% {
+                    font-stretch: 100%;
+                }
+            }
+
+
+            .class-1{
+                animation-name: width-01;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            .class-2{
+                animation-name: width-02;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            .class-3{
+                animation-name: width-03;
+                animation-duration: 14s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            .class-4{
+                animation-name: width-04;
+                animation-duration: 18s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- text should approximately result in a square, to contrast the static and the moving -->
+    <!-- I chose a descriptive wording because it, in contrast to a question or a demand, transmits the feeling of still observation -->
+
+<div>
+    <p class="class-4"> staring into trees </p>
+    <p class="class-1"> staring into trees </p>
+    <p class="class-3"> staring into trees </p>
+    <p class="class-2"> staring into trees </p>
+    <p class="class-1"> staring into trees </p>
+    <p class="class-4"> staring into trees </p>
+    <p class="class-2"> staring into trees </p>
+    <p class="class-3"> staring into trees </p>    
+    <p class="class-1"> staring into trees </p>
+</div>
+
+</body>
+
+</html>
